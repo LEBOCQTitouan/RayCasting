@@ -1,7 +1,14 @@
+import engine.Engine;
+import graphic.AppWindow;
+
 public class App {
 
-    public App() {
+    private AppWindow window;
+    private Engine engine;
 
+    public App() {
+        this.engine = new Engine();
+        this.window = new AppWindow(400, 400);
     }
 
     public static void main(String[] args) throws Exception {
@@ -9,11 +16,10 @@ public class App {
 
         App app = new App();
         app.start();
-
-        System.out.println("End");
     }
 
     public void start() {
-
+        this.window.setVisible(true);
+        this.window.pack();
     }
 }
