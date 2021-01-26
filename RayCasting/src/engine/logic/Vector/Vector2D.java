@@ -3,7 +3,7 @@ package engine.logic.Vector;
 import engine.logic.Points.Point2D;
 
 public class Vector2D extends Vector {
-    private Point2D start, end;
+    private final Point2D start, end;
 
     public Vector2D(Point2D start, Point2D end) {
         this.start = start;
@@ -14,16 +14,8 @@ public class Vector2D extends Vector {
         return start;
     }
 
-    public void setStart(Point2D start) {
-        this.start = start;
-    }
-
     public Point2D getEnd() {
         return end;
-    }
-
-    public void setEnd(Point2D end) {
-        this.end = end;
     }
 
     @Override

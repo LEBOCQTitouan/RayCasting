@@ -1,5 +1,7 @@
 package engine;
 
+import java.util.Random;
+
 import engine.logic.Points.Point3D;
 import engine.logic.Vector.Vector3D;
 import linkEngineToGraphic.UpdateChecker;
