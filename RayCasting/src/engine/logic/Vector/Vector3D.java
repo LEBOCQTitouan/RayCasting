@@ -26,16 +26,6 @@ public class Vector3D extends Vector2D {
         return new Double[][] {new Double[] {getStart().getX(), getStart().getY(), getStart().getZ()}, new Double[] {getEnd().getX(), getEnd().getY(), getEnd().getZ()}};
     }
 
-    /*
-        (a1,a2,a3)________________(b1,b2,b3)
-            A                           B 
-        (c1,c2,c3)________________(d1,d2,d3)
-            C                           D
-
-        a1+t(b1-a1)=c1+s(d1-c1)
-        a2+t(b2-a2)=c2+s(d2-c2)
-        a3+t(b3-a3)=c3+s(d3-c3)
-    */
     public Point3D intersect(Vector3D v) throws Exception {
         double A = this.getEnd().getX() - this.getStart().getX();
         double B = v.getStart().getX() - v.getEnd().getX();
