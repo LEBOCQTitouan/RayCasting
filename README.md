@@ -12,6 +12,10 @@ This project aims to recreate a 3d engine similar to the one put in place in the
 ***A simple example of raycasting***
 ## Screenshots ##
 ## DevLog ##
+## Day 1 ##
+[x] creation basic folder/file organisation
+[x] Vector intersection
+[x] diagram class
 ## Tools ##
 ## Author ##
 ## Sources ##
