@@ -2,6 +2,8 @@ package graphic;
 
 import javax.swing.JPanel;
 
+import linkEngineToGraphic.UpdateChecker;
+
 public class Canvas extends JPanel {
 
     /**

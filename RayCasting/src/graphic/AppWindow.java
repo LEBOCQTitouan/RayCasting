@@ -5,7 +5,9 @@ import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
-public class AppWindow extends JFrame {
+import linkEngineToGraphic.UpdateChecker;
+
+public class AppWindow extends JFrame implements UpdateChecker {
 
     /**
      * Jframe serialVersionUID
@@ -29,5 +31,10 @@ public class AppWindow extends JFrame {
         /** setup size of the window */
         this.setMinimumSize(new Dimension(width, height));
         this.canvas.setMinimumSize(new Dimension(width, height));
+    }
+
+    @Override
+    public void update(Object o) {
+        // TODO
     }
 }
