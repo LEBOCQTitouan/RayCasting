@@ -1,6 +1,5 @@
 package engine.logic.Vertex;
 
-import engine.logic.Points.Point;
 import engine.logic.Points.Point2D;
 
 public class Vertex2D extends Vertex {

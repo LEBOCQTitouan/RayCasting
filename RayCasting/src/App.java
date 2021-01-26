@@ -21,5 +21,7 @@ public class App {
     public void start() {
         this.window.setVisible(true);
         this.window.pack();
+        // link logic and graphic
+        this.engine.setUpChecker(this.window);
     }
 }
