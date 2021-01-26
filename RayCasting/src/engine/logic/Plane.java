@@ -1,5 +1,7 @@
 package engine.logic;
 
+import engine.logic.Vertex.Vertex3D;
+
 public class Plane {
-    private Vertex v1, v2;
+    private Vertex3D v1, v2;
 }
