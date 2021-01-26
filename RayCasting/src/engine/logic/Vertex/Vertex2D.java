@@ -25,4 +25,9 @@ public class Vertex2D extends Vertex {
     public void setEnd(Point2D end) {
         this.end = end;
     }
+
+    @Override
+    public String toString() {
+        return "Vertex2D [end=" + end + ", start=" + start + "]";
+    }
 }
