@@ -1,20 +1,20 @@
 package engine;
 
 import engine.logic.Points.Point3D;
-import engine.logic.Vertex.Vertex3D;
+import engine.logic.Vector.Vector3D;
 import linkEngineToGraphic.UpdateChecker;
 
 public class Engine{
 
     private UpdateChecker upChecker;
     /** logic element */
-    private Vertex3D POVDirection;
+    private Vector3D POVDirection;
 
     public Engine() {
-        this(new Vertex3D(new Point3D(0, 1, 0), new Point3D(1, 1, 0)));
+        this(new Vector3D(new Point3D(0, 1, 0), new Point3D(1, 1, 0)));
     }
 
-    public Engine(Vertex3D pOVDirection) {
+    public Engine(Vector3D pOVDirection) {
         POVDirection = pOVDirection;
     }
 
@@ -31,11 +31,11 @@ public class Engine{
         this.upChecker = upChecker;
     }
 
-    public Vertex3D getPOVDirection() {
+    public Vector3D getPOVDirection() {
         return POVDirection;
     }
 
-    public void setPOVDirection(Vertex3D pOVDirection) {
+    public void setPOVDirection(Vector3D pOVDirection) {
         POVDirection = pOVDirection;
     }
 

@@ -1,11 +1,11 @@
-package engine.logic.Vertex;
+package engine.logic.Vector;
 
 import engine.logic.Points.Point3D;
 
-public class Vertex3D extends Vertex2D {
+public class Vector3D extends Vector2D {
     private Point3D start, end;
 
-    public Vertex3D(Point3D start, Point3D end) {
+    public Vector3D(Point3D start, Point3D end) {
         super(start, end);
     }
 
@@ -27,6 +27,10 @@ public class Vertex3D extends Vertex2D {
 
     @Override
     public String toString() {
-        return "Vertex3D [end=" + end + ", start=" + start + "]";
+        return "Vector3D [end=" + end + ", start=" + start + "]";
+    }
+    
+    public Double[][] toArray() {
+        return new Double[][] {new Double[] {start.getX(), start.getY(), start.getZ()}, new Double[] {end.getX(), end.getY(), end.getZ()}};
     }
 }
