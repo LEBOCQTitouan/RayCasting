@@ -8,6 +8,8 @@
 6. [Sources]()
 ## Project ##
 This project aims to recreate a 3d engine similar to the one put in place in the Game Wolfenstein 3d. This project will be realised solely in java with swing.
+![Ray Casting exaple from Wikipedia]()  
+***A simple example of raycasting***
 ## Screenshots ##
 ## DevLog ##
 ## Tools ##
