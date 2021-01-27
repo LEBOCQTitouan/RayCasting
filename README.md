@@ -16,6 +16,16 @@ This project aims to recreate a 3d engine similar to the one put in place in the
 - [x] creation basic folder/file organisation
 - [x] Vector intersection
 - [x] diagram class
+### Day 2 ###
+I have discovered that creating 3D vectors was useless in RayCasting ( and so was creating a method enabling us to detect intersections between 3D vectors 😢 ).
+Indeed RayCasting make a 2D map appear as 3D. For instance (credit to [aruvham](https://github.com/aruvham)):  
+![Ray Casting example](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Faruvham%2Fjavascript-ray-casting&psig=AOvVaw0xux3MPrLIQ-1lUm_Q1d5n&ust=1611856411140000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjrx5vXvO4CFQAAAAAdAAAAABAD)  
+So all the game is based on simuling depth from a 2D basis.
+#### How does it work ? ####
+The camera (your POV) launches rays enbabling it to detect what is in front of him, and the more an object will be far from the camera the smaller it will appear on screen.
+#### How to make the POV look 3D ? ####
+First all walls will have a fixed height and will be all on the same plane. Why ? Because thanks to that we will already know the height of the obstacles and thanks to that we will be able to calcuate only have an only unknown value.  
+![Raycasting Demo](https://github.com/LEBOCQTitouan/RayCasting/blob/main/img/readme/RaycastingDemo.png)
 ## Tools ##
 ## Author ##
 ## Sources ##
