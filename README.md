@@ -25,7 +25,10 @@ So all the game is based on simuling depth from a 2D basis.
 The camera (your POV) launches rays enbabling it to detect what is in front of him, and the more an object will be far from the camera the smaller it will appear on screen.
 #### How to make the POV look 3D ? ####
 First all walls will have a fixed height and will be all on the same plane. Why ? Because thanks to that we will already know the height of the obstacles and thanks to that we will be able to calcuate only have an only unknown value.  
-![Raycasting Demo](https://github.com/LEBOCQTitouan/RayCasting/blob/main/img/readme/RaycastingDemo.png)
+![Raycasting Demo](https://github.com/LEBOCQTitouan/RayCasting/blob/main/img/readme/RaycastingDemo.png)  
+Finally we put a our screen between the objects and our camera and we have our simulated 3D vision.  
+Let's get to work !  
+
 ## Tools ##
 ## Author ##
 ## Sources ##
